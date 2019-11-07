@@ -11,7 +11,7 @@ class Node:
 def quickSort(lst):
     lowList = None
     highList = None
-    if lst == None:
+    if lst == None or lst.next == None:
         return lst
     pivot = lst
     lst = lst.next
@@ -21,7 +21,7 @@ def quickSort(lst):
         else:
             highList = addList(highList, Node(lst.data))
         lst = lst.next
-    return addList(addList(quickSort(lowList), quickSort(pivot)), quickSort(highList))
+    return addList(addList(quickSort(lowList), Node(pivot.data)), quickSort(highList))
 
 def addList(lst, node):
     head = lst
