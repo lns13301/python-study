@@ -4,7 +4,7 @@
 - [X] 완료 여부
 
 ## Quick Sort
-- [ ] 완료 여부
+- [X] 완료 여부
 
 ## Binary Search Tree
-- [ ] 완료 여부
+- [X] 완료 여부
